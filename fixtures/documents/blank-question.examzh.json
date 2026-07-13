@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "0.12.0",
+  "documentId": "fixture-blank-question",
+  "metadata": {
+    "title": "填空题结构样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "teacher",
+    "fillin": {
+      "type": "line",
+      "width": "4em"
+    }
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": []
+  },
+  "sections": [
+    {
+      "id": "section-blank",
+      "title": "填空题",
+      "kind": "blank",
+      "questions": [
+        {
+          "id": "q-blank",
+          "type": "blank",
+          "points": 6,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "请填写下列空格。"
+                }
+              ]
+            }
+          ],
+          "blanks": [
+            {
+              "id": "blank-1",
+              "command": "fillin",
+              "answer": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                }
+              ],
+              "width": "3em",
+              "type": "line",
+              "examZhOptions": {
+                "width": "3em"
+              }
+            },
+            {
+              "id": "blank-2",
+              "command": "fillin*",
+              "answer": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "4"
+                    }
+                  ]
+                }
+              ],
+              "width": "4em",
+              "type": "paren",
+              "parenType": "quanjiao",
+              "examZhOptions": {
+                "type": "paren"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": []
+}

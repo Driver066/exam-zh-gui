@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.2.0",
+  "documentId": "fixture-exam-zh-options",
+  "metadata": {
+    "title": "exam-zh 选项透传样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "teacher",
+    "examZhOptions": {
+      "question/show-answer": true,
+      "future/custom-option": "preserve-me"
+    }
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": [],
+    "preface": []
+  },
+  "sections": [],
+  "assets": [],
+  "examZh": {
+    "documentClass": {
+      "twoside": false
+    },
+    "preambleSetup": {
+      "choices/max-columns": 4
+    },
+    "rawPreamble": ["% custom preamble placeholder"]
+  }
+}

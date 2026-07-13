@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "0.2.0",
+  "documentId": "fixture-choice-question",
+  "metadata": {
+    "title": "选择题结构样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "teacher",
+    "examZhOptions": {
+      "choices/max-columns": 4
+    }
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": [],
+    "preface": []
+  },
+  "sections": [
+    {
+      "id": "section-choice",
+      "title": "选择题",
+      "kind": "singleChoice",
+      "questions": [
+        {
+          "id": "q-single",
+          "type": "singleChoice",
+          "environment": "question",
+          "points": 5,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "函数 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "f(x)=x^2"
+                },
+                {
+                  "type": "text",
+                  "text": " 的图像开口方向是"
+                }
+              ]
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [{ "type": "text", "text": "向上" }]
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [{ "type": "text", "text": "向下" }]
+                }
+              ]
+            }
+          ],
+          "answer": {
+            "choiceKeys": ["A"]
+          },
+          "examZhOptions": {
+            "index": 1
+          }
+        },
+        {
+          "id": "q-multiple",
+          "type": "multipleChoice",
+          "environment": "question",
+          "points": 5,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [{ "type": "text", "text": "下列命题中正确的是" }]
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [{ "type": "text", "text": "偶数能被 2 整除" }]
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [{ "type": "text", "text": "质数只有两个正因数" }]
+                }
+              ]
+            }
+          ],
+          "answer": {
+            "choiceKeys": ["A", "B"]
+          },
+          "examZhOptions": {
+            "show-answer": true
+          }
+        }
+      ]
+    }
+  ],
+  "assets": [],
+  "examZh": {
+    "documentClass": {},
+    "preambleSetup": {
+      "question/show-answer": true
+    },
+    "rawPreamble": []
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "0.2.0",
+  "documentId": "fixture-figures",
+  "metadata": {
+    "title": "图片结构样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "student"
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": [],
+    "preface": []
+  },
+  "sections": [
+    {
+      "id": "section-figures",
+      "title": "图文题",
+      "kind": "problem",
+      "questions": [
+        {
+          "id": "q-figure",
+          "type": "problem",
+          "environment": "problem",
+          "stem": [
+            {
+              "type": "textFigure",
+              "text": [
+                {
+                  "type": "paragraph",
+                  "children": [{ "type": "text", "text": "观察右图，回答问题。" }]
+                }
+              ],
+              "figure": {
+                "type": "figureGroup",
+                "items": [
+                  {
+                    "label": "图 1",
+                    "figure": {
+                      "type": "image",
+                      "assetId": "asset-graph-1",
+                      "caption": "函数图像"
+                    }
+                  },
+                  {
+                    "label": "图 2",
+                    "figure": {
+                      "type": "image",
+                      "assetId": "asset-graph-2",
+                      "caption": "几何示意"
+                    }
+                  }
+                ],
+                "layout": {
+                  "kind": "multifigures",
+                  "columns": 2,
+                  "figPos": "right"
+                },
+                "examZhOptions": {
+                  "columns": 2
+                }
+              },
+              "layout": {
+                "kind": "textfigure",
+                "figPos": "right",
+                "textWidth": "0.55\\linewidth",
+                "figureWidth": "0.4\\linewidth"
+              },
+              "examZhOptions": {
+                "fig-pos": "right"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-graph-1",
+      "kind": "image",
+      "sourcePath": "assets/graph-1.png",
+      "alt": "函数图像"
+    },
+    {
+      "id": "asset-graph-2",
+      "kind": "image",
+      "sourcePath": "assets/graph-2.png",
+      "alt": "几何示意"
+    }
+  ],
+  "examZh": {
+    "documentClass": {},
+    "preambleSetup": {},
+    "rawPreamble": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "0.2.0",
+  "documentId": "fixture-rich-content",
+  "metadata": {
+    "title": "富内容结构样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "student"
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": [
+      {
+        "type": "paragraph",
+        "children": [{ "type": "text", "text": "请在答题区域作答。" }]
+      }
+    ],
+    "preface": []
+  },
+  "sections": [
+    {
+      "id": "section-rich",
+      "title": "富内容",
+      "kind": "custom",
+      "questions": [
+        {
+          "id": "q-rich",
+          "type": "problem",
+          "environment": "problem",
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                { "type": "text", "text": "计算 " },
+                { "type": "inlineMath", "latex": "\\int_0^1 x\\,dx" },
+                { "type": "text", "text": "，并预览 " },
+                { "type": "inlineMath", "latex": "\\eu^{\\iu x}+\\uppi" },
+                { "type": "text", "text": "。" }
+              ]
+            },
+            {
+              "type": "displayMath",
+              "latex": "\\int_0^1 x\\,dx=\\frac12"
+            },
+            {
+              "type": "list",
+              "kind": "enumerate",
+              "items": [
+                [
+                  {
+                    "type": "paragraph",
+                    "children": [{ "type": "text", "text": "写出原函数。" }]
+                  }
+                ],
+                [
+                  {
+                    "type": "paragraph",
+                    "children": [{ "type": "text", "text": "代入上下限。" }]
+                  }
+                ]
+              ],
+              "examZhOptions": {
+                "label": "(\\arabic*)"
+              }
+            },
+            {
+              "type": "rawLatex",
+              "latex": "% raw latex placeholder"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [],
+  "examZh": {
+    "documentClass": {},
+    "preambleSetup": {},
+    "rawPreamble": []
+  }
+}

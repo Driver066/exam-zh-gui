@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "0.12.0",
+  "documentId": "fixture-editor-mvp",
+  "metadata": {
+    "title": "编辑器 MVP 样例",
+    "subject": "数学",
+    "grade": "高一"
+  },
+  "setup": {
+    "answerMode": "teacher",
+    "examZhOptions": {
+      "paren/show-answer": true,
+      "fillin/show-answer": true,
+      "solution/show-solution": "show-stay"
+    }
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "请把答案填写在答题区域。"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "section-choice",
+      "title": "选择题",
+      "kind": "singleChoice",
+      "questions": [
+        {
+          "id": "q-single",
+          "type": "singleChoice",
+          "points": 5,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "函数 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "y=x^2"
+                },
+                {
+                  "type": "text",
+                  "text": " 的图像开口方向是"
+                }
+              ]
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "label": "A",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "向上"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "向下"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "correctChoiceIds": ["A"]
+        },
+        {
+          "id": "q-multiple",
+          "type": "multipleChoice",
+          "points": 5,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "下列说法正确的是"
+                }
+              ]
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "label": "A",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "0 是偶数"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "2 是质数"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "correctChoiceIds": ["A", "B"]
+        }
+      ]
+    },
+    {
+      "id": "section-blank",
+      "title": "填空题",
+      "kind": "blank",
+      "questions": [
+        {
+          "id": "q-blank",
+          "type": "blank",
+          "points": 6,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "若 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "a=1"
+                },
+                {
+                  "type": "text",
+                  "text": "，"
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "b=2"
+                },
+                {
+                  "type": "text",
+                  "text": "，则 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "a+b="
+                },
+                {
+                  "type": "blankRef",
+                  "blankId": "blank-1"
+                },
+                {
+                  "type": "text",
+                  "text": "，"
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "ab="
+                },
+                {
+                  "type": "blankRef",
+                  "blankId": "blank-2"
+                }
+              ]
+            }
+          ],
+          "blanks": [
+            {
+              "id": "blank-1",
+              "command": "fillin",
+              "answer": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    }
+                  ]
+                }
+              ],
+              "width": "4em",
+              "type": "line"
+            },
+            {
+              "id": "blank-2",
+              "command": "fillin*",
+              "answer": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                }
+              ],
+              "width": "4em",
+              "type": "paren"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-problem",
+      "title": "解答题",
+      "kind": "problem",
+      "questions": [
+        {
+          "id": "q-problem",
+          "type": "problem",
+          "points": 12,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "已知数列满足递推关系。"
+                }
+              ]
+            }
+          ],
+          "subQuestionGroup": {
+            "exportAs": "enumerate",
+            "listKind": "enumerate",
+            "items": [
+              {
+                "id": "sub-1",
+                "stem": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "求首项。"
+                      }
+                    ]
+                  }
+                ],
+                "solution": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "代入条件可得。"
+                      }
+                    ]
+                  }
+                ],
+                "scoreMarks": [
+                  {
+                    "id": "score-1",
+                    "points": 4,
+                    "description": [{ "type": "text", "text": "写出条件" }]
+                  }
+                ]
+              },
+              {
+                "id": "sub-2",
+                "stem": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "证明通项公式。"
+                      }
+                    ]
+                  }
+                ],
+                "scoreMarks": [
+                  {
+                    "id": "score-2",
+                    "points": 8,
+                    "description": [{ "type": "text", "text": "证明完整" }]
+                  }
+                ]
+              }
+            ]
+          },
+          "solution": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "综合两问得到结论。"
+                }
+              ]
+            }
+          ],
+          "scoreMarks": [
+            {
+              "id": "score-total",
+              "points": 12,
+              "description": [{ "type": "text", "text": "结论正确" }]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,56 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+% Created with exam-zh GUI
+% Project: https://github.com/Driver066/exam-zh-gui
+% If this tool helps you, a GitHub star is appreciated.
+% exam-zh-gui-schema: 0.13.0
+% exam-zh-gui-document-id: fixture-export-compile-smoke
+% exam-zh-gui-generated-at: 2026-01-01T00:00:00.000Z
+% exam-zh-gui-source: fixtures/export/compile-smoke.examzh.json
+
+\documentclass{exam-zh}
+\examsetup{
+  fillin/show-answer = true,
+  page/foot-content = {数学试题第;页（共~;页）},
+  paren/show-answer = true,
+  paren/show-paren = true,
+  solution/show-solution = show-stay,
+}
+\everymath{\displaystyle}
+\title{Phase 3 导出冒烟样例}
+\subject{数学}
+\begin{document}
+\secret
+\maketitle
+本试卷用于验证 Phase 3 导出器。
+\begin{notice}
+\item 答题前请检查试卷页数。
+\end{notice}
+\section{选择题}
+\begin{question}[points = 5]
+设集合 $A=\{1,2\}$，则 $A$ 的元素个数是 \paren[B]
+\begin{choices}
+\item $1$
+\item $2$
+\end{choices}
+\end{question}
+\section{填空题}
+\begin{question}[points = 5]
+函数 $f(x)=x+1$ 在 $x=0$ 处的值为\fillin[1]
+\end{question}
+\section{解答题}
+\begin{problem}[points = 10]
+已知数列 $a_n=n$。
+\begin{enumerate}
+\item 求 $a_1$。
+\item 求前 $3$ 项和。
+\end{enumerate}
+\end{problem}
+\begin{solution}
+由定义可得答案，关键步骤\score{2}，{\examsetup{solution/score-pre-content = {}, solution/score-post-content = {}}\score{注意书写}}。
+
+\textbf{评分点：}
+
+过程完整 \score{5}
+\end{solution}
+\end{document}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "0.2.0",
+  "documentId": "fixture-problem-with-subquestions",
+  "metadata": {
+    "title": "解答题结构样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "teacher"
+  },
+  "frontMatter": {
+    "informationFields": [],
+    "notices": [],
+    "preface": []
+  },
+  "sections": [
+    {
+      "id": "section-problem",
+      "title": "解答题",
+      "kind": "problem",
+      "questions": [
+        {
+          "id": "q-problem",
+          "type": "problem",
+          "environment": "problem",
+          "points": 12,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [{ "type": "text", "text": "已知数列满足如下条件。" }]
+            }
+          ],
+          "subQuestionGroup": {
+            "exportAs": "enumerate",
+            "listKind": "enumerate",
+            "items": [
+              {
+                "id": "sub-1",
+                "label": "1",
+                "stem": [
+                  {
+                    "type": "paragraph",
+                    "children": [{ "type": "text", "text": "求首项。" }]
+                  }
+                ],
+                "answer": {
+                  "text": [
+                    {
+                      "type": "paragraph",
+                      "children": [{ "type": "text", "text": "首项为 1。" }]
+                    }
+                  ]
+                },
+                "scoreMarks": [{ "id": "score-1", "points": 4, "note": "列出条件" }]
+              },
+              {
+                "id": "sub-2",
+                "label": "2",
+                "stem": [
+                  {
+                    "type": "paragraph",
+                    "children": [{ "type": "text", "text": "证明通项公式。" }]
+                  }
+                ],
+                "solution": [
+                  {
+                    "type": "paragraph",
+                    "children": [{ "type": "text", "text": "使用数学归纳法。" }]
+                  }
+                ],
+                "scoreMarks": [{ "id": "score-2", "points": 8, "note": "完成归纳证明" }]
+              }
+            ]
+          },
+          "solution": [
+            {
+              "type": "paragraph",
+              "children": [{ "type": "text", "text": "综合两问可得结论。" }]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [],
+  "examZh": {
+    "documentClass": {},
+    "preambleSetup": {},
+    "rawPreamble": []
+  }
+}

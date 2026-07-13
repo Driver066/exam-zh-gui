@@ -1,0 +1,321 @@
+{
+  "schemaVersion": "0.12.0",
+  "documentId": "fixture-export-compile-smoke",
+  "metadata": {
+    "title": "Phase 3 导出冒烟样例",
+    "subject": "数学"
+  },
+  "setup": {
+    "answerMode": "teacher",
+    "examZhOptions": {
+      "paren/show-paren": true,
+      "paren/show-answer": true,
+      "fillin/show-answer": true,
+      "solution/show-solution": "show-stay"
+    }
+  },
+  "frontMatter": {
+    "secret": true,
+    "informationFields": [],
+    "notices": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "答题前请检查试卷页数。"
+          }
+        ]
+      }
+    ],
+    "preface": [
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "本试卷用于验证 Phase 3 导出器。"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "section-choice",
+      "title": "选择题",
+      "kind": "singleChoice",
+      "questions": [
+        {
+          "id": "q-choice",
+          "type": "singleChoice",
+          "points": 5,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "设集合 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "A=\\{1,2\\}"
+                },
+                {
+                  "type": "text",
+                  "text": "，则 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "A"
+                },
+                {
+                  "type": "text",
+                  "text": " 的元素个数是"
+                }
+              ]
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineMath",
+                      "latex": "1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineMath",
+                      "latex": "2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "correctChoiceIds": ["B"]
+        }
+      ]
+    },
+    {
+      "id": "section-blank",
+      "title": "填空题",
+      "kind": "blank",
+      "questions": [
+        {
+          "id": "q-blank",
+          "type": "blank",
+          "points": 5,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "函数 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "f(x)=x+1"
+                },
+                {
+                  "type": "text",
+                  "text": " 在 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "x=0"
+                },
+                {
+                  "type": "text",
+                  "text": " 处的值为"
+                },
+                {
+                  "type": "blankRef",
+                  "blankId": "blank-1"
+                }
+              ]
+            }
+          ],
+          "blanks": [
+            {
+              "id": "blank-1",
+              "command": "fillin",
+              "answer": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-problem",
+      "title": "解答题",
+      "kind": "problem",
+      "questions": [
+        {
+          "id": "q-problem",
+          "type": "problem",
+          "points": 10,
+          "stem": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "已知数列 "
+                },
+                {
+                  "type": "inlineMath",
+                  "latex": "a_n=n"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ]
+            }
+          ],
+          "subQuestionGroup": {
+            "exportAs": "enumerate",
+            "listKind": "enumerate",
+            "items": [
+              {
+                "id": "sub-1",
+                "stem": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "求 "
+                      },
+                      {
+                        "type": "inlineMath",
+                        "latex": "a_1"
+                      },
+                      {
+                        "type": "text",
+                        "text": "。"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sub-2",
+                "stem": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "求前 "
+                      },
+                      {
+                        "type": "inlineMath",
+                        "latex": "3"
+                      },
+                      {
+                        "type": "text",
+                        "text": " 项和。"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "solution": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "由定义可得答案，关键步骤"
+                },
+                {
+                  "type": "scoreRef",
+                  "scoreMarkId": "score-step"
+                },
+                {
+                  "type": "text",
+                  "text": "，"
+                },
+                {
+                  "type": "annotationRef",
+                  "annotationId": "annotation-writing"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ]
+            }
+          ],
+          "scoreMarks": [
+            {
+              "id": "score-process",
+              "points": 5,
+              "description": [
+                {
+                  "type": "text",
+                  "text": "过程完整"
+                }
+              ]
+            },
+            {
+              "id": "score-step",
+              "points": 2,
+              "description": [
+                {
+                  "type": "text",
+                  "text": "写出关键步骤"
+                }
+              ],
+              "placement": "inline"
+            }
+          ],
+          "solutionAnnotations": [
+            {
+              "id": "annotation-writing",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "注意书写"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [],
+  "examZh": {
+    "rawPreamble": ["\\everymath{\\displaystyle}"]
+  }
+}

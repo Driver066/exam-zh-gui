@@ -1,0 +1,1 @@
+export { createEmptyExamDocument } from './defaults';
